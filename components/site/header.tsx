@@ -29,7 +29,7 @@ export function Header() {
           aria-label="IABOT, inicio"
           className="brand"
         >
-          <img src="/images/logo.webp" alt="IABOT" width="160" height="44" />
+          <img src="/images/logo.webp" alt="IABOT" width="640" height="184" />
           <span>ROBÓTICA EDUCATIVA</span>
         </Link>
         <nav className="desktop-nav" aria-label="Navegación principal">

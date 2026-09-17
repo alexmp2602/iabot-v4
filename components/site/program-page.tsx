@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { TrustedBrands } from "@/components/site/trusted-brands";
 import { Check, ArrowUpRight } from "lucide-react";
 import { whatsapp } from "@/lib/content";
 export function ProgramPage({
@@ -100,6 +101,7 @@ export function ProgramPage({
           </Link>
         </div>
       </section>
+      <TrustedBrands />
     </main>
   );
 }

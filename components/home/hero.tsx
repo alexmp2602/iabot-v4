@@ -35,10 +35,10 @@ export function Hero() {
         <div className="hero-photo">
           <img
             src="/images/milo.webp"
-            srcSet="/images/milo-small.webp 480w, /images/milo.webp 1200w"
+            srcSet="/images/milo-small.webp 480w, /images/milo.webp 1000w"
             sizes="(max-width: 760px) 100vw, 48vw"
             alt="Robot LEGO WeDo construido junto a una tablet con su programa"
-            width="1200"
+            width="1000"
             height="1000"
             fetchPriority="high"
           />

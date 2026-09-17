@@ -7,7 +7,7 @@ export function Footer() {
       <div className="container footer-grid">
         <div>
           <Link prefetch={false} href="/" aria-label="IABOT, inicio">
-            <img src="/images/logo.webp" alt="IABOT" width="150" height="42" />
+            <img src="/images/logo.webp" alt="IABOT" width="640" height="184" />
           </Link>
           <p>
             Un espacio para construir,

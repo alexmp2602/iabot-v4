@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { ArrowUpRight, SlidersHorizontal, RotateCcw } from "lucide-react";
 import { NativeSelect } from "@/components/ui/native-select";
+import { SectionLink } from "@/components/site/section-link";
 import { courses } from "@/lib/content";
 export function CourseFinder() {
   const [age, setAge] = useState("");
@@ -44,10 +45,12 @@ export function CourseFinder() {
             <div className="course-image">
               <img
                 src={`/images/${c.image.replace(".webp", "-small.webp")}`}
+                srcSet={`/images/${c.image.replace(".webp", "-small.webp")} 480w, /images/${c.image} ${c.slug === "impresion-3d" || c.slug === "roblox-studio" ? 1200 : 1000}w`}
+                sizes="(max-width: 450px) calc(100vw - 44px), (max-width: 760px) calc((100vw - 62px) / 2), (max-width: 1500px) calc((100vw - 140px) / 3), 400px"
                 alt={c.alt}
                 loading="lazy"
                 width="480"
-                height="360"
+                height={c.slug === "impresion-3d" || c.slug === "roblox-studio" ? 320 : 480}
               />
               <span className="age-badge">
                 {c.min}–{c.max} años
@@ -81,9 +84,9 @@ export function CourseFinder() {
       )}
       <p className="course-note">
         Cada chico aprende a su ritmo. Si tenés dudas sobre el grupo,{" "}
-        <Link prefetch={false} href="#contacto">
+        <SectionLink href="#contacto">
           te ayudamos a elegir
-        </Link>
+        </SectionLink>
         .
       </p>
     </>

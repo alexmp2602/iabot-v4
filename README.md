@@ -44,3 +44,11 @@ El formulario valida los datos y abre WhatsApp con un mensaje preparado. La pers
 ## Recursos
 
 Las fotografías y el logo pertenecen al material de IABOT. El contenido fue tomado del sitio institucional y debe mantenerse actualizado por sus responsables. Los paquetes de terceros conservan sus propias licencias.
+
+### Marcas e imágenes
+
+`lib/brands.ts` reúne las ocho organizaciones publicadas en la web institucional. `TrustedBrands` muestra la misma sección en la portada y en las propuestas para instituciones y empresas. Para agregar una organización, confirmar su relación con IABOT y sumar su logo en `public/images/brands/`.
+
+El logo de IABOT se exportó desde `public/assets/img/logo/PNG/iabot-PNG-06.png` del repositorio `iabot-v3`, quitando márgenes transparentes y conservando la proporción. La versión WebP tiene 640 píxeles de ancho y compresión sin pérdida. Los logos de organizaciones se tomaron de `public/assets/img/marcas/webp/` de la web institucional, conservando su color y proporción.
+
+Las tarjetas de talleres usan `srcSet` para elegir entre las miniaturas de 480 píxeles y las fotografías grandes según el ancho y la densidad de la pantalla. Evitar reemplazar el original por una miniatura o agrandar archivos pequeños: no recupera detalle.

@@ -6,6 +6,7 @@ import { Testimonial } from "@/components/home/testimonial";
 import { Locations } from "@/components/home/locations";
 import { Institutions } from "@/components/home/institutions";
 import { Questions } from "@/components/home/questions";
+import { TrustedBrands } from "@/components/site/trusted-brands";
 import { Contact } from "@/components/home/contact";
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
       <Testimonial />
       <Locations />
       <Institutions />
+      <TrustedBrands />
       <Questions />
       <Contact />
     </main>
