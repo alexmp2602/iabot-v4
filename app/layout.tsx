@@ -1,0 +1,41 @@
+import Link from "next/link";
+import type { Metadata } from "next";
+import "./globals.css";
+import { Header } from "@/components/site/header";
+import { Footer } from "@/components/site/footer";
+export const metadata: Metadata = {
+  title: {
+    default: "IABOT | Robótica y programación para chicos",
+    template: "%s | IABOT",
+  },
+  description:
+    "Talleres de robótica con LEGO, programación, impresión 3D y videojuegos para chicos desde los 5 años. Conocé las propuestas y sedes de IABOT.",
+  robots: { index: false, follow: false },
+  openGraph: {
+    type: "website",
+    locale: "es_AR",
+    siteName: "IABOT",
+    title: "IABOT | Aprender haciendo, crear jugando",
+    description:
+      "Robótica, programación y diseño para chicos y jóvenes. Encontrá el taller para su próxima idea.",
+  },
+  icons: { icon: "/images/favicon.png" },
+};
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="es-AR">
+      <body>
+        <Link prefetch={false} className="skip-link" href="#contenido">
+          Saltar al contenido
+        </Link>
+        <Header />
+        {children}
+        <Footer />
+      </body>
+    </html>
+  );
+}
