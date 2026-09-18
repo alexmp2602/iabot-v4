@@ -5,11 +5,11 @@ export function Workshops() {
     <section id="talleres" className="section container">
       <div className="section-heading">
         <div>
-          <div className="eyebrow">01 / ENCONTRÁ SU PRÓXIMO DESAFÍO</div>
+          <div className="eyebrow">01 / NUESTROS TALLERES</div>
           <h2>
-            Una idea para
+            Talleres para
             <br />
-            cada etapa.
+            cada edad.
           </h2>
         </div>
         <p>

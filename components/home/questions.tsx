@@ -5,11 +5,11 @@ export function Questions() {
   return (
     <section id="preguntas" className="section container faq-section">
       <div>
-        <div className="eyebrow">ANTES DE EMPEZAR</div>
+        <div className="eyebrow">PREGUNTAS FRECUENTES</div>
         <h2>
-          Buenas preguntas.
+          Antes de elegir
           <br />
-          Respuestas claras.
+          un taller.
         </h2>
         <p>
           Y si te queda alguna más,

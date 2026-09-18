@@ -6,19 +6,21 @@ export function Hero() {
     <section className="hero container">
       <div className="hero-copy">
         <div className="eyebrow">
-          <span className="eyebrow-line" /> TECNOLOGÍA QUE SE APRENDE HACIENDO
+          <span className="eyebrow-line" /> TALLERES EN IABOT
         </div>
         <h1>
-          De “¿y si…?”
-          <br />a <span>“¡lo hice!”</span>
+          Robótica y
+          <br />
+          programación
+          <br />
+          <span>para chicos.</span>
         </h1>
         <p className="hero-description">
-          Robótica, programación y diseño para chicos y jóvenes. Un lugar para
-          convertir la curiosidad en algo que pueden construir.
+          En IABOT construyen robots, crean videojuegos y aprenden a programar.
         </p>
         <div className="hero-actions">
           <SectionLink href="#talleres" className="button">
-            Encontrá su taller <ArrowUpRight size={20} />
+            Ver talleres <ArrowUpRight size={20} />
           </SectionLink>
           <SectionLink href="#metodologia" className="text-link">
             Conocé IABOT <ArrowDown size={17} />
