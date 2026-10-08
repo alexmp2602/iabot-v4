@@ -22,7 +22,9 @@ pnpm typecheck
 pnpm build
 ```
 
-Next.js genera el sitio estático en `out/`. Publicar esa carpeta en un proveedor con soporte para rutas de directorio y `404.html`. No requiere un servidor Node.js en producción. `pnpm dev` inicia el servidor para desarrollo.
+En Vercel, el preset Next.js usa `.next/` para leer los manifiestos de compilación y procesar la exportación estática. No configurar `out/` como Output Directory con ese preset.
+
+Para otros proveedores, Next.js genera el sitio estático en `out/`. Publicar esa carpeta en un proveedor con soporte para rutas de directorio y `404.html`. No requiere un servidor Node.js en producción. `pnpm dev` inicia el servidor para desarrollo.
 
 La indexación está habilitada. `SITE_URL` permite configurar la URL pública durante el build; por defecto usa `https://www.iabot.com.ar`. El sitemap y los canonical se generan con esa base. `vercel.json` define Next.js, la instalación y el directorio de salida del proyecto independiente IABOT V4. El dominio se vincula manualmente desde Vercel.
 

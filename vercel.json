@@ -3,6 +3,6 @@
   "framework": "nextjs",
   "buildCommand": "npm run build",
   "installCommand": "npx --yes pnpm@11.25.0 install --frozen-lockfile",
-  "outputDirectory": "out",
+  "outputDirectory": ".next",
   "trailingSlash": true
 }
