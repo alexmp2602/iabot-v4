@@ -25,10 +25,10 @@ export const trustedBrands = [
     "height": 160
   },
   {
-    "name": "FK Latam",
-    "image": "fk-latam.webp",
-    "width": 168,
-    "height": 160
+    "name": "Folkit Latam",
+    "image": "folkit-latam.webp",
+    "width": 640,
+    "height": 381
   },
   {
     "name": "Sauces",
@@ -47,5 +47,11 @@ export const trustedBrands = [
     "image": "internet-services.webp",
     "width": 253,
     "height": 160
+  }
+  ,{
+    name: "Mapuche Country Club",
+    image: "mapuche.webp",
+    width: 300,
+    height: 102,
   }
 ] as const;

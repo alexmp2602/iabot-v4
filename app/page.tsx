@@ -9,6 +9,8 @@ import { Questions } from "@/components/home/questions";
 import { TrustedBrands } from "@/components/site/trusted-brands";
 import { Contact } from "@/components/home/contact";
 
+export const metadata = { alternates: { canonical: "/" } };
+
 export default function Home() {
   return (
     <main id="contenido">

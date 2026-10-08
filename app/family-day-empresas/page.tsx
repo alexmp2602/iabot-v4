@@ -1,5 +1,7 @@
 import { ProgramPage } from "@/components/site/program-page";
+import { WorkshopGallery } from "@/components/site/workshop-gallery";
 export const metadata = {
+  alternates: { canonical: "/family-day-empresas/" },
   title: "Family Day para empresas",
   description:
     "Jornadas de robótica para empresas y familias. Construcción y programación de robots LEGO con acompañamiento del equipo de IABOT.",
@@ -10,8 +12,8 @@ export default function Page() {
       title="Un Family Day para crear juntos."
       label="ROBÓTICA PARA EMPRESAS Y FAMILIAS"
       description="Una jornada en la que empleados y familias comparten un desafío: construir un robot y hacerlo funcionar. Tecnología, juego y trabajo en equipo en una misma experiencia."
-      image="family_day.webp"
-      alt="Familias participando en una jornada al aire libre de IABOT"
+      image="family-day-encuentro.webp"
+      alt="Familias construyendo robots con kits LEGO en una jornada de IABOT"
       cta="Consultar una fecha"
       items={[
         {
@@ -27,6 +29,8 @@ export default function Page() {
           body: "El equipo de IABOT facilita la actividad y acompaña a los grupos en sus proyectos.",
         },
       ]}
-    />
+    >
+      <WorkshopGallery />
+    </ProgramPage>
   );
 }

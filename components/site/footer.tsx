@@ -60,7 +60,7 @@ export function Footer() {
       </div>
       <div className="container footer-bottom">
         <span>© {new Date().getFullYear()} IABOT</span>
-        <span>Mercedes · Luján · San Andrés de Giles · 9 de Julio</span>
+        <span>Mercedes · Luján · San Andrés de Giles · 9 de Julio · General Rodríguez</span>
         <span>Buenos Aires, Argentina</span>
       </div>
     </footer>

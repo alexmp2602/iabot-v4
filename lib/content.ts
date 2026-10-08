@@ -144,7 +144,7 @@ export const courses: Course[] = [
     materials:
       "Consultá los materiales y equipos necesarios al coordinar la inscripción.",
     duration: "Consultá los días, horarios y duración de la próxima propuesta.",
-    mode: "Presencial · San Andrés de Giles",
+    mode: "Consultá disponibilidad",
   },
   {
     slug: "roblox-studio",
@@ -183,22 +183,29 @@ export const locations = [
     slug: "lujan",
     name: "Luján",
     address: "Ituzaingó 315",
-    note: "Robótica y programación",
+    note: "Robótica y Programación",
     map: "https://www.google.com/maps/search/?api=1&query=Ituzaing%C3%B3+315+Luj%C3%A1n+Buenos+Aires",
   },
   {
     slug: "san-andres-de-giles",
     name: "San Andrés de Giles",
-    address: "Avellaneda 754",
-    note: "También impresión 3D",
-    map: "https://www.google.com/maps/search/?api=1&query=Avellaneda+754+San+Andr%C3%A9s+de+Giles+Buenos+Aires",
+    address: "Mitre 241",
+    note: "Robótica",
+    map: "https://www.google.com/maps/search/?api=1&query=Mitre+241+San+Andr%C3%A9s+de+Giles+Buenos+Aires",
   },
   {
     slug: "9-de-julio",
     name: "9 de Julio",
     address: "Levalle 772",
-    note: "Robótica y programación",
+    note: "Robótica y Programación",
     map: "https://www.google.com/maps/search/?api=1&query=Levalle+772+9+de+Julio+Buenos+Aires",
+  },
+  {
+    slug: "general-rodriguez",
+    name: "General Rodríguez",
+    address: "Carlos Pellegrini 955",
+    note: "Robótica y Programación",
+    map: "https://www.google.com/maps/search/?api=1&query=Carlos+Pellegrini+955+General+Rodr%C3%ADguez+Buenos+Aires",
   },
 ];
 export const faqs = [

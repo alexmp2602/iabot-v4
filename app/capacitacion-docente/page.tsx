@@ -1,5 +1,6 @@
 import { ProgramPage } from "@/components/site/program-page";
 export const metadata = {
+  alternates: { canonical: "/capacitacion-docente/" },
   title: "Capacitación docente en robótica",
   description:
     "Formación práctica para incorporar LEGO Education, Scratch y programación al aula. Modalidad presencial o virtual y certificado de participación IABOT.",

@@ -24,7 +24,9 @@ pnpm build
 
 Next.js genera el sitio estático en `out/`. Publicar esa carpeta en un proveedor con soporte para rutas de directorio y `404.html`. No requiere un servidor Node.js en producción. `pnpm dev` inicia el servidor para desarrollo.
 
-La versión de evaluación tiene la indexación deshabilitada en `app/layout.tsx` y `app/robots.ts`. Antes de la publicación definitiva, revisar esa configuración, definir el dominio y agregar canonical y sitemap. Confirmar también edades, sedes, disponibilidad y datos de contacto con IABOT. No hay dominio de producción acoplado al código.
+La indexación está habilitada. `SITE_URL` permite configurar la URL pública durante el build; por defecto usa `https://www.iabot.com.ar`. El sitemap y los canonical se generan con esa base. `vercel.json` define Next.js, la instalación y el directorio de salida del proyecto independiente IABOT V4. El dominio se vincula manualmente desde Vercel.
+
+La ruta `/inscription/` conserva el formulario de inscripción de la versión anterior.
 
 ## Organización
 
@@ -47,7 +49,7 @@ Las fotografías y el logo pertenecen al material de IABOT. El contenido fue tom
 
 ### Marcas e imágenes
 
-`lib/brands.ts` reúne las ocho organizaciones publicadas en la web institucional. `TrustedBrands` muestra la misma sección en la portada y en las propuestas para instituciones y empresas. Para agregar una organización, confirmar su relación con IABOT y sumar su logo en `public/images/brands/`.
+`lib/brands.ts` reúne las organizaciones confirmadas en la web institucional. `TrustedBrands` muestra la misma sección en la portada y en las propuestas para instituciones y empresas. Para agregar una organización, confirmar su relación con IABOT y sumar su logo en `public/images/brands/`.
 
 El logo de IABOT se exportó desde `public/assets/img/logo/PNG/iabot-PNG-06.png` del repositorio `iabot-v3`, quitando márgenes transparentes y conservando la proporción. La versión WebP tiene 640 píxeles de ancho y compresión sin pérdida. Los logos de organizaciones se tomaron de `public/assets/img/marcas/webp/` de la web institucional, conservando su color y proporción.
 

@@ -10,6 +10,7 @@ export function ProgramPage({
   alt,
   items,
   cta,
+  children,
 }: {
   title: string;
   label: string;
@@ -18,6 +19,7 @@ export function ProgramPage({
   alt: string;
   items: { title: string; body: string }[];
   cta: string;
+  children?: React.ReactNode;
 }) {
   return (
     <main id="contenido">
@@ -101,6 +103,7 @@ export function ProgramPage({
           </Link>
         </div>
       </section>
+      {children}
       <TrustedBrands />
     </main>
   );

@@ -14,6 +14,7 @@ export async function generateMetadata({
   const { slug } = await params;
   const c = courses.find((c) => c.slug === slug);
   return {
+    alternates: { canonical: `/cursos/${slug}/` },
     title: c ? `${c.name}: ${c.min} a ${c.max} años` : "Taller no encontrado",
     description: c?.description,
   };

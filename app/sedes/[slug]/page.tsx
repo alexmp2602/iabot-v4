@@ -14,6 +14,7 @@ export async function generateMetadata({
   const { slug } = await params;
   const l = locations.find((l) => l.slug === slug);
   return {
+    alternates: { canonical: `/sedes/${slug}/` },
     title: l ? `Sede ${l.name}` : "Sede no encontrada",
     description: l
       ? `Talleres de robótica y programación en ${l.name}. Conocé la ubicación y consultá horarios y grupos disponibles.`
@@ -58,19 +59,6 @@ export default async function LocationPage({
             Los talleres acompañan diferentes edades y experiencias. Consultanos
             por las propuestas y grupos disponibles en esta sede.
           </p>
-          {slug === "san-andres-de-giles" && (
-            <p>
-              En esta sede también se dicta{" "}
-              <Link
-                prefetch={false}
-                className="inline-link"
-                href="/cursos/impresion-3d"
-              >
-                Impresión 3D para chicos de 9 a 13 años
-              </Link>
-              .
-            </p>
-          )}
           <p>
             Para orientarte, contanos la edad del alumno y qué actividad le
             interesa. Te confirmamos horarios, aranceles y cupos antes de

@@ -52,8 +52,10 @@ export function Institutions() {
           href="/family-day-empresas"
         >
           <img
-            src="/images/family_day.webp"
-            alt="Jornada al aire libre de Family Day con actividades de IABOT"
+            src="/images/family-day-encuentro.webp"
+            srcSet="/images/family-day-encuentro-small.webp 480w, /images/family-day-encuentro.webp 960w"
+            sizes="(max-width: 760px) 100vw, 50vw"
+            alt="Familias participando en un Family Day de robótica con IABOT"
             width="600"
             height="400"
             loading="lazy"

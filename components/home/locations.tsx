@@ -16,7 +16,7 @@ export function Locations() {
             </h2>
           </div>
           <p>
-            Cuatro sedes en la provincia de Buenos Aires. Encontrá la tuya y
+            Cinco sedes en la provincia de Buenos Aires. Encontrá la tuya y
             consultá las propuestas disponibles.
           </p>
         </div>
